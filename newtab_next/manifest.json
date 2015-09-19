@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+
+  "name": "Put new tab next to current",
+  "description": "This extension puts a new tab next to the current tab",
+  "version": "1.0",
+
+  "background": {
+    "persistent": false,
+    "scripts": ["newtab_next.js"]
+  }
+}
