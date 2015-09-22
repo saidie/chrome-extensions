@@ -11,3 +11,9 @@ chrome.tabs.onCreated.addListener(function(tab) {
     chrome.tabs.move(tab.id, { index: lastActiveTab[tab.windowId] + 1 });
   }
 })
+
+chrome.tabs.onMoved.addListener(function(tabId, moveInfo) {
+  if ( lastActiveTab[moveInfo.windowId] == moveInfo.fromIndex ) {
+    lastActiveTab[moveInfo.windowId] = moveInfo.toIndex;
+  }
+});
