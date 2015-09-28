@@ -36,6 +36,6 @@ chrome.commands.onCommand.addListener(function(command) {
   }
 
   if ( callback ) {
-    chrome.tabs.query({ active: true }, callback);
+    chrome.tabs.query({ active: true, currentWindow: true }, callback);
   }
 });
