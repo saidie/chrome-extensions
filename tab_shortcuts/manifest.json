@@ -3,23 +3,9 @@
 
   "name": "Tab shortcuts",
   "description": "This extension provides some keyboard shortcuts for tabe operation",
-  "version": "1.0",
+  "version": "1.1",
 
   "commands": {
-    "show-next-tab": {
-      "suggested_key": {
-        "default": "Ctrl+F",
-        "mac": "MacCtrl+F"
-      },
-      "description": "Show next tab"
-    },
-    "show-prev-tab": {
-      "suggested_key": {
-        "default": "Ctrl+B",
-        "mac": "MacCtrl+B"
-      },
-      "description": "Show previous tab"
-    },
     "move-tab-next": {
       "suggested_key": {
         "default": "Ctrl+Shift+F",
